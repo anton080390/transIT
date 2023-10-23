@@ -1,0 +1,38 @@
+.grid-container {
+  background-color: #000000;
+  padding: 1rem;
+  text-align: center;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 48px;
+  margin-right: 1rem;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: red;
+}
+
+span {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.company-description {
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+}
