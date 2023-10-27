@@ -3,153 +3,123 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
-import { NavLink } from "react-router-dom";
 import { MENU } from "../constants/constants";
 import "./Navigation.css";
+import Drawer from "@mui/material/Drawer";
 
-const pages = [];
+export default function Navigation({ scrollToSection }) {
+  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
+  const [isSearchFocused, setIsSearchFocused] = React.useState(false);
 
-// const settings = ["Profile", "Account", "Dashboard", "Logout"];
-
-function Navigation() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
+  const handleDrawerOpen = () => {
+    setIsDrawerOpen(true);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+  const handleDrawerClose = () => {
+    setIsDrawerOpen(false);
+  };
+
+  // Добавьте функцию для прокрутки к секции
+  const handleScrollToSection = (sectionName) => {
+    scrollToSection(sectionName);
   };
 
   return (
-    <AppBar
-      position="static"
-      sx={{
-        backgroundColor: "rgba(20, 20,20, 0.3)",
-        position: "fixed",
-        zIndex: 100,
-        top: 0,
-      }}
-    >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+    <React.Fragment>
+      <AppBar
+        className={`navigation-container ${
+          isSearchFocused ? "search-focused" : ""
+        }`}
+        sx={{
+          backgroundColor: "rgba(20, 20, 20, 0.7)",
+          position: "fixed",
+          zIndex: 100,
+          top: 0,
+        }}
+      >
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
             <IconButton
               size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
               color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              display: { xs: "none", md: "flex" },
-            }}
-          >
-            {MENU.map(({ name, link }, index) => (
-              <NavLink
-                key={index}
-                className={({ isActive }) =>
-                  `navLink ${isActive ? "isActive" : ""}`
-                }
-                to={link}
-              >
-                {name}
-              </NavLink>
-            ))}
-          </Box>
+              <MenuIcon />
+            </IconButton>
 
-          <Box sx={{ flexGrow: 0 }}>
-            {/* <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip> */}
-            {/* <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                display: { xs: "none", md: "flex" },
               }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu> */}
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+              <Box
+                className="navLinkContainer"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                {MENU.map(({ name }, index) => (
+                  <a
+                    key={index}
+                    className="navLink"
+                    onClick={() => handleScrollToSection(name)}
+                  >
+                    {name}
+                  </a>
+                ))}
+              </Box>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+
+      <Drawer
+        anchor="left"
+        open={isDrawerOpen}
+        onClose={handleDrawerClose}
+        sx={{
+          "& .MuiDrawer-paper": {
+            backgroundColor: "rgba(20, 20, 20, 0.3)",
+            color: "#fff",
+          },
+        }}
+      >
+        <Box
+          sx={{
+            width: 250,
+            display: "flex",
+            flexDirection: "column",
+            paddingTop: 2,
+          }}
+        >
+          {MENU.map(({ name }, index) => (
+            <a
+              key={index}
+              className="drawerNavLink"
+              onClick={() => handleScrollToSection(name)}
+              style={{
+                color: "red",
+                fontWeight: "bold",
+                margin: "10px",
+              }}
+            >
+              {name}
+            </a>
+          ))}
+        </Box>
+      </Drawer>
+    </React.Fragment>
   );
 }
-export default Navigation;

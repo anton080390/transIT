@@ -1,7 +1,6 @@
 import Grid from "@mui/material/Grid";
-import { Element, scroller } from "react-scroll";
 import "./home.css";
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,13 +13,11 @@ import f4 from "../images/forwarder/Phito1.png";
 
 function Forwarder() {
   return (
-    <div className="forwarder" style={{ height: "100vh" }}>
+    <div className="forwarder" style={{ margin: "2rem" }}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <div className="forwarder-text">
-            <h1 className="forwarder-h1">
-              Оформлення экспедиторської документації
-            </h1>
+            <h1 className="forwarder-h1">Оформлення экспортної документації</h1>
             <p className="forwarder-p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla

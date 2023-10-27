@@ -7,7 +7,7 @@ import l3 from "../images/lab/l3.jpg";
 import l4 from "../images/lab/l4.jpg";
 import l5 from "../images/lab/l5.jpg";
 import l6 from "../images/lab/l6.jpg";
-import "./lab.css";
+import "./home.css";
 
 function Lab() {
   useEffect(() => {
@@ -46,110 +46,113 @@ function Lab() {
   }, []);
 
   return (
-    <div className="lab-container" style={{ height: "100vh" }}>
-      <Grid container spacing={3}>
-        <Grid item xs={12} md={2}>
-          <div className="lab-images">
-            <Element name="l1">
-              <img
-                src={l1}
-                alt="Изображение 1"
-                style={{
-                  width: "300px",
-                  border: "10px solid white",
-                  transform: "rotate(-25deg)",
-                }}
-                id="l1"
-                className="animated-element"
-              />
-            </Element>
-            <Element name="l2">
-              <img
-                src={l2}
-                alt="Изображение 2"
-                style={{
-                  width: "300px",
-                  border: "10px solid white",
-                  transform: "rotate(15deg)",
-                }}
-                id="l2"
-                className="animated-element"
-              />
-            </Element>
-            <Element name="l3">
-              <img
-                src={l3}
-                alt="Изображение 3"
-                style={{
-                  width: "300px",
-                  border: "10px solid white",
-                  transform: "rotate(35deg)",
-                }}
-                id="l3"
-                className="animated-element"
-              />
-            </Element>
-          </div>
-        </Grid>
-        <Grid item xs={12} md={3}>
-          <div className="lab-images">
-            <Element name="l4">
-              <img
-                src={l4}
-                alt="Изображение 4"
-                style={{
-                  width: "300px",
-                  border: "10px solid white",
-                  transform: "rotate(10deg)",
-                }}
-                id="l4"
-                className="animated-element"
-              />
-            </Element>
-            <Element name="l5">
-              <img
-                src={l5}
-                alt="Изображение 5"
-                style={{
-                  width: "300px",
-                  border: "10px solid white",
-                  transform: "rotate(-25deg)",
-                }}
-                id="l5"
-                className="animated-element"
-              />
-            </Element>
-            <Element name="l6">
-              <img
-                src={l6}
-                alt="Изображение 6"
-                style={{
-                  width: "300px",
-                  border: "10px solid white",
-                  transform: "rotate(15deg)",
-                }}
-                id="l6"
-                className="animated-element"
-              />
-            </Element>
-          </div>
-        </Grid>
-        <Grid item xs={12} md={5}>
-          <div className="lab-text">
-            <h1 className="lab-h1">Лабораторні дослидження</h1>
-            <p className="lab-p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-            </p>
-          </div>
-        </Grid>
+    // <div className="lab-container">
+    <Grid
+      container
+      sx={{
+        alignItems: "center",
+        display: "flex",
+        flexWrap: "wrap-reverse",
+      }}
+    >
+      <Grid item xs={3} md={2} className="lab-images">
+        <Element name="l1">
+          <img
+            src={l1}
+            alt="Изображение 1"
+            style={{
+              width: "300px",
+              border: "10px solid white",
+              transform: "rotate(-25deg)",
+            }}
+            id="l1"
+            className="animated-element"
+          />
+        </Element>
+        <Element name="l2">
+          <img
+            src={l2}
+            alt="Изображение 2"
+            style={{
+              width: "300px",
+              border: "10px solid white",
+              transform: "rotate(15deg)",
+            }}
+            id="l2"
+            className="animated-element"
+          />
+        </Element>
+        <Element name="l3">
+          <img
+            src={l3}
+            alt="Изображение 3"
+            style={{
+              width: "300px",
+              border: "10px solid white",
+              transform: "rotate(35deg)",
+            }}
+            id="l3"
+            className="animated-element"
+          />
+        </Element>
       </Grid>
-    </div>
+      <Grid item xs={3} md={3} className="lab-images">
+        <Element name="l4">
+          <img
+            src={l4}
+            alt="Изображение 4"
+            style={{
+              width: "300px",
+              border: "10px solid white",
+              transform: "rotate(10deg)",
+            }}
+            id="l4"
+            className="animated-element"
+          />
+        </Element>
+        <Element name="l5">
+          <img
+            src={l5}
+            alt="Изображение 5"
+            style={{
+              width: "300px",
+              border: "10px solid white",
+              transform: "rotate(-25deg)",
+            }}
+            id="l5"
+            className="animated-element"
+          />
+        </Element>
+        <Element name="l6">
+          <img
+            src={l6}
+            alt="Изображение 6"
+            style={{
+              width: "300px",
+              border: "10px solid white",
+              transform: "rotate(15deg)",
+            }}
+            id="l6"
+            className="animated-element"
+          />
+        </Element>
+      </Grid>
+      <Grid item xs={12} md={5}>
+        <div className="lab-text">
+          <h1 className="lab-h1">Лабораторні дослидження</h1>
+          <p className="lab-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
+            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
+            libero. Aenean feugiat non eros quis feugiat.
+          </p>
+        </div>
+      </Grid>
+    </Grid>
+    // </div>
   );
 }
 

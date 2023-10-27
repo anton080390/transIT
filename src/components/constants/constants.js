@@ -8,14 +8,14 @@ export const MENU = [
   },
   {
     name: "Логістика",
-    link: "/films",
+    link: "/transport",
   },
   {
     name: "Лабораторні дослідження",
-    link: "/tvshows",
+    link: "/lab1",
   },
   {
     name: "Експортна документація",
-    link: "/tvshows",
+    link: "/forwarder",
   },
 ];

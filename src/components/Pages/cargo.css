@@ -1,3 +1,11 @@
+#app {
+  height: 100vh;
+}
+html,
+body {
+  height: 100vh;
+  background-color: #edecec;
+}
 .cargo-h1 {
   text-align: center;
   font-size: 60px;
@@ -7,22 +15,30 @@
   font-size: 25px;
   margin: 1rem;
 }
-.cargo-image {
-  height: 300px;
-  border: 10px solid white;
+.swiper {
+  width: 100%;
 }
 
-.cargo-image:hover {
-  z-index: 1;
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  /* height: 50%; */
 }
-.animated-element {
-  position: relative;
-  left: 100%;
-  opacity: 0;
-  transition: left 3s, opacity 3s;
+@media (max-width: 600px) {
+  .swiper-slide {
+    width: 120%;
+  }
+}
+.swiper-slide img {
+  width: 100%;
 }
 
-.animated-element.animateview {
-  left: 0;
-  opacity: 1;
+.cargo-container {
+  display: block;
+  margin-top: 5rem;
 }
+
+/* img {
+  width: 300px;
+} */
