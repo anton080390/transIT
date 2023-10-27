@@ -17,7 +17,7 @@ function Forwarder() {
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <div className="forwarder-text">
-            <h1 className="forwarder-h1">Оформлення экспортної документації</h1>
+            <h1 className="forwarder-h1">Экспортна документація</h1>
             <p className="forwarder-p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
