@@ -56,7 +56,7 @@ function Transport() {
               src={ti1}
               alt="Изображение 1"
               style={{
-                maxWidth: "80%",
+                maxWidth: "70%",
                 border: "10px solid white",
                 transform: "rotate(-15deg)",
               }}
@@ -69,7 +69,7 @@ function Transport() {
               src={ti2}
               alt="Изображение 2"
               style={{
-                width: "80%",
+                width: "70%",
                 border: "10px solid white",
                 transform: "rotate(15deg)",
               }}
