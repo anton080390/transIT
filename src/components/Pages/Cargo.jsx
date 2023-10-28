@@ -21,9 +21,8 @@ function Cargo() {
         spacing={1}
         sx={{
           alignItems: "center",
-          display: "flex",
-          flexDirection: "row",
         }}
+        xs={12}
       >
         <Grid item xs={12} md={12} className="cargo-text">
           <h1 className="cargo-h1">Перевалка зерновых</h1>

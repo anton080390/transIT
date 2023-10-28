@@ -12,7 +12,16 @@ function Footer() {
       <Grid item xs={12}>
         <p className="company-description">{companyDescription}</p>
       </Grid>
-      <Grid item xs={12} className="contacts">
+      <Grid
+        item
+        xs={12}
+        className="contacts"
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around",
+        }}
+      >
         <div>
           <a href={`tel:${phoneNumber}`} className="contact-link">
             <PhoneIcon className="icon" />
