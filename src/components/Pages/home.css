@@ -147,8 +147,11 @@ h4 {
   margin-left: 1rem;
 }
 @media (max-width: 600px) {
-  .lab-images {
-    width: 10%;
+  .animated-element {
+    width: 240%;
+  }
+  .forwarder-h1 {
+    font-size: 40px;
   }
 }
 .lab-text {

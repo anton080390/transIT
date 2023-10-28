@@ -15,7 +15,7 @@ function Forwarder() {
   return (
     <div className="forwarder" style={{ margin: "2rem" }}>
       <Grid container spacing={2}>
-        <Grid item xs={11} md={6}>
+        <Grid item xs={12} md={6}>
           <div className="forwarder-text" style={{ textAlign: "center" }}>
             <h1 className="forwarder-h1">Экспортна документація</h1>
             <p className="forwarder-p">

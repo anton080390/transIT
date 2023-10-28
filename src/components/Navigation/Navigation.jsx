@@ -74,6 +74,7 @@ export default function Navigation({ scrollToSection }) {
                     key={index}
                     className="navLink"
                     onClick={() => handleScrollToSection(name)}
+                    onTouchEnd={() => handleScrollToSection(name)}
                   >
                     {name}
                   </a>
@@ -110,7 +111,7 @@ export default function Navigation({ scrollToSection }) {
               onClick={() => handleScrollToSection(name)}
               onTouchEnd={() => handleScrollToSection(name)}
               style={{
-                color: "red",
+                color: "white",
                 fontWeight: "bold",
                 margin: "10px",
               }}

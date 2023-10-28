@@ -61,7 +61,7 @@ function Lab() {
             src={l1}
             alt="Изображение 1"
             style={{
-              width: "300px",
+              maxWidth: "250px",
               border: "10px solid white",
               transform: "rotate(-25deg)",
             }}
@@ -74,7 +74,7 @@ function Lab() {
             src={l2}
             alt="Изображение 2"
             style={{
-              width: "300px",
+              maxWidth: "250px",
               border: "10px solid white",
               transform: "rotate(15deg)",
             }}
@@ -87,7 +87,7 @@ function Lab() {
             src={l3}
             alt="Изображение 3"
             style={{
-              width: "300px",
+              maxWidth: "250px",
               border: "10px solid white",
               transform: "rotate(35deg)",
             }}
@@ -102,7 +102,7 @@ function Lab() {
             src={l4}
             alt="Изображение 4"
             style={{
-              width: "300px",
+              maxWidth: "250px",
               border: "10px solid white",
               transform: "rotate(10deg)",
             }}
@@ -115,7 +115,7 @@ function Lab() {
             src={l5}
             alt="Изображение 5"
             style={{
-              width: "300px",
+              maxWidth: "250px",
               border: "10px solid white",
               transform: "rotate(-25deg)",
             }}
@@ -128,7 +128,7 @@ function Lab() {
             src={l6}
             alt="Изображение 6"
             style={{
-              width: "300px",
+              maxWidth: "250px",
               border: "10px solid white",
               transform: "rotate(15deg)",
             }}
