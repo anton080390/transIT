@@ -21,7 +21,6 @@ export default function Navigation({ scrollToSection }) {
     setIsDrawerOpen(false);
   };
 
-  // Добавьте функцию для прокрутки к секции
   const handleScrollToSection = (sectionName) => {
     scrollToSection(sectionName);
   };
@@ -109,6 +108,7 @@ export default function Navigation({ scrollToSection }) {
               key={index}
               className="drawerNavLink"
               onClick={() => handleScrollToSection(name)}
+              onTouchEnd={() => handleScrollToSection(name)}
               style={{
                 color: "red",
                 fontWeight: "bold",
