@@ -23,16 +23,49 @@
 }
 
 .icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
   color: red;
 }
 
 span {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .company-description {
   font-size: 32px;
   color: #fff;
   margin: 0;
+  font-weight: bold;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 20rem;
+  border: 5px solid rgb(211, 210, 210);
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  background-color: #e1e1e1;
+}
+.form-group textarea {
+  width: 25rem;
+  height: 5rem;
+}
+
+.submit {
+  width: 10rem;
+  height: 2rem;
+}
+.submit:hover {
+  background-color: red;
+  transform: scale(1.2);
 }
