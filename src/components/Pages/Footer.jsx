@@ -4,6 +4,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import React from "react";
 import emailjs from "emailjs-com";
+import Button from "@mui/material/Button";
+import SendIcon from "@mui/icons-material/Send";
 
 function Footer() {
   const phoneNumber = "+380503948155";
@@ -91,9 +93,14 @@ function Footer() {
             <textarea name="message" placeholder="Сообщение" required />
           </div>
           <div className="form-group">
-            <button type="submit" className="submit">
+            <Button
+              variant="contained"
+              endIcon={<SendIcon />}
+              type="submit"
+              className="submit"
+            >
               Отправить
-            </button>
+            </Button>
           </div>
         </form>
       </Grid>
@@ -101,11 +108,10 @@ function Footer() {
       <Grid item xs={12}>
         <iframe
           title="Google Maps"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.124270444609!2d-73.9874991844984!3d40.75889697932387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f745c72bfbf%3A0x847db23852754e54!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1609759856259!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47620.19988611016!2d28.501171930117295!3d45.336189021350606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b73f822bb361dd%3A0x9878ecbe91cb7182!2z0JfQtdGA0L3QvtCy0LAg0LvQsNCx0L7RgNCw0YLQvtGA0ZbRjyDQotCe0JIg0KLRgNCw0L3RgSDQkNC5INCi0ZY!5e1!3m2!1sru!2sua!4v1698782149118!5m2!1sru!2sua"
           width="100%"
-          height="200"
+          height="200px"
           frameBorder="0"
-          style={{ border: 0 }}
           allowFullScreen
         ></iframe>
       </Grid>
