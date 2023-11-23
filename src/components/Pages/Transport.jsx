@@ -39,15 +39,18 @@ function Transport() {
     <div className="transport">
       <Grid container xs={12} sx={{ alignItems: "center" }}>
         <Grid item xs={12} md={6} className="transport-text">
-          <h1 className="transport-h1">Перевозка вантажу</h1>
+          <h1 className="transport-h1">Перевезення вантажу</h1>
           <p className="transport-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
-            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
-            libero. Aenean feugiat non eros quis feugiat.
+            Ми - ваш надійний партнер у справах перевезення
+            сільськогосподарської продукції та інших вантажів по всій території
+            України. Завдяки власному сучасному автопарку, який включає в себе
+            техніку таких відомих брендів, як Renault, MAN, Scania та нашим
+            надійним партнерам, ми забезпечуємо ефективні та безпечні
+            перевезення. Наша компетентна команда логістичних експертів володіє
+            великим досвідом у сфері перевезень і готова допомогти вам обрати
+            оптимальні маршрути для доставки вашої продукції. Довірте нам ваші
+            вантажі, і ми забезпечимо їх надійну та швидку доставку з
+            використанням сучасних логістичних рішень.
           </p>
         </Grid>
         <Grid item xs={12} md={5} className="transport-images">

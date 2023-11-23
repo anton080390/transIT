@@ -25,15 +25,20 @@ function Cargo() {
         xs={12}
       >
         <Grid item xs={12} md={12} className="cargo-text">
-          <h1 className="cargo-h1">Перевалка зерновых</h1>
+          <h1 className="cargo-h1">Перевалка зернових</h1>
           <p className="cargo-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
-            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
-            libero. Aenean feugiat non eros quis feugiat.
+            Індивідуальний підхід до кожного клієнта - це лише частина наших
+            принципів. Ми горді тим, що надаємо повний спектр послуг для вашого
+            комфорту та успішності. У нас ви отримаєте не лише високу якість
+            перевалки зерна за найнижчими цінами, але й повний цикл
+            обслуговування вашого зернового бізнесу. Наша компанія пропонує
+            додаткові послуги, такі як диспетчеризація автотранспорту під час
+            вивантаження, проведення лабораторних аналізів, зберігання зерна з
+            найвищими стандартами безпеки, а також ефективне завантаження на
+            судна та повний облік усіх процесів. Ми працюємо в усіх портах Дунаю
+            та в портах 'Великої' Одеси, надаючи нашим клієнтам надійну
+            підтримку та високі стандарти обслуговування. З нами ваш бізнес стає
+            ще ефективнішим та конкурентоспроможнішим.
           </p>
         </Grid>
       </Grid>

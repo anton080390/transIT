@@ -139,15 +139,16 @@ function Lab() {
       </Grid>
       <Grid item xs={12} md={5}>
         <div className="lab-text">
-          <h1 className="lab-h1">Лабораторні дослидження</h1>
+          <h1 className="lab-h1">Лабораторні дослідження</h1>
           <p className="lab-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper
-            velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
-            libero. Aenean feugiat non eros quis feugiat.
+            Наша компанія гордо пропонує повний комплекс дослідження якості
+            зернових, бобових та олійних культур, щоб забезпечити вам найвищу
+            якість продукції згідно з усіма державними та міжнародними
+            стандартами. Лабораторії використовують передове та сертифіковане
+            обладнання, таке як SupNIR, Granolyser, ІНФРАСКАН, для забезпечення
+            точних та достовірних вимірювань. Висококваліфікована команда
+            досвідчених спеціалістів гарантує проведення вимірювань з вищою
+            точністю та надає вам впевненість у якості вашої продукції.
           </p>
         </div>
       </Grid>

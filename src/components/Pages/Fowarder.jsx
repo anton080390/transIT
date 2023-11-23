@@ -19,13 +19,15 @@ function Forwarder() {
           <div className="forwarder-text" style={{ textAlign: "center" }}>
             <h1 className="forwarder-h1">Экспортна документація</h1>
             <p className="forwarder-p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+              Наша компанія - надійний партнер у сфері міжнародного експорту. Ми
+              з радістю Вам допоможемо в оформленні документації, забезпечуючи
+              вас необхідними дозвільними документами для експорту в усі країни
+              світу. З нашим досвідом та висококваліфікованою командою фахівців
+              ви можете бути впевнені в тому, що ваше зерно буде високоякісно
+              оброблене та відправлене в будь-який куточок світу. Обираючи нас
+              для повного циклу обслуговування експорту зерна, ми зробимо ваш
+              бізнес ще більш успішним та конкурентоспроможним на міжнародному
+              ринку.
             </p>
           </div>
         </Grid>

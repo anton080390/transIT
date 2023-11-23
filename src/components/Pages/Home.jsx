@@ -37,58 +37,52 @@ function Home() {
         ></div>
         <SwiperSlide>
           <div className="title" data-swiper-parallax="-300">
-            <h3>Slide 1</h3>
+            <h3>Місія компанії</h3>
           </div>
           <div className="subtitle" data-swiper-parallax="-200">
-            <h4>Subtitle</h4>
+            <h3>ТОВ "Транс ІТ"</h3>
           </div>
           <div className="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            <p style={{ fontSize: "1.5rem" }}>
+              Наша місія полягає в наданні високоякісних та інноваційних послуг
+              з перевезення, лабораторного дослідження, перевалки, обробки та
+              оформлення експортних документів зернових культур, сприяючи
+              розвитку агросектору та забезпечуючи наших клієнтів надійним та
+              ефективним партнерством.
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="title" data-swiper-parallax="-300">
-            <h3>Slide 2</h3>
+            <h3>Мета компанії</h3>
           </div>
           <div className="subtitle" data-swiper-parallax="-200">
-            <h4>Subtitle</h4>
+            <h3>ТОВ "Транс АЙ ТІ"</h3>
           </div>
           <div className="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            <p style={{ fontSize: "1.5rem" }}>
+              Наша мета – стати лідерами у галузі агроперевезень та обробки
+              зернових, надаючи інтегровані рішення, які враховують найсучасніші
+              технології та екологічні стандарти. Ми прагнемо до постійного
+              розвитку, створюючи інноваційні рішення для оптимізації ланцюга
+              постачання та підтримки сталого сільськогосподарського розвитку в
+              Україні.
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="title" data-swiper-parallax="-300">
-            <h3>Slide 3</h3>
+            <h3>Цінності компанії</h3>
           </div>
           <div className="subtitle" data-swiper-parallax="-200">
-            <h4>Subtitle</h4>
+            <h3>ТОВ "Транс АЙ ТІ"</h3>
           </div>
           <div className="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            <p style={{ fontSize: "1.5rem" }}>
+              Наші цінності базуються на індивідуальному підході до кожного
+              клієнта, якості обслуговування та взаємовигідних відносинах. Ми
+              прагнемо до чесності та прозорості в усіх наших діях, враховуючи
+              потреби клієнтів та сприяючи їх успіху.
             </p>
           </div>
         </SwiperSlide>
