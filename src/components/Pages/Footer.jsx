@@ -10,7 +10,7 @@ import SendIcon from "@mui/icons-material/Send";
 function Footer() {
   const phoneNumber = "+380503948155";
   const emailAddress = "atkachenko@gmail.com";
-  const companyDescription = "Наші контакти";
+  const companyDescription = "Наші контакти:";
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -43,27 +43,62 @@ function Footer() {
   };
 
   return (
-    <Grid container spacing={1} className="grid-container">
+    <Grid container spacing={2} className="grid-container">
       <Grid item xs={12}>
         <p className="company-description">{companyDescription}</p>
       </Grid>
+
       <Grid
         item
         xs={12}
+        md={9}
         className="contacts"
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-around",
-        }}
+        sx={{ textAlign: "center" }}
       >
-        <div>
+        <div className="contact-block">
+          <p>Логистика:</p>
           <a href={`tel:${phoneNumber}`} className="contact-link">
             <PhoneIcon className="icon" />
             <span>380503948155</span>
           </a>
         </div>
-        <div>
+        <div className="contact-block">
+          <p>Лабораторія:</p>
+          <a href={`tel:${phoneNumber}`} className="contact-link">
+            <PhoneIcon className="icon" />
+            <span>380503948155</span>
+          </a>
+        </div>
+        <div className="contact-block">
+          <p>Складське зберігання:</p>
+          <a href={`tel:${phoneNumber}`} className="contact-link">
+            <PhoneIcon className="icon" />
+            <span>380503948155</span>
+          </a>
+        </div>
+        <div className="contact-block">
+          <p>Перевалка вантажів:</p>
+          <a href={`tel:${phoneNumber}`} className="contact-link">
+            <PhoneIcon className="icon" />
+            <span>380503948155</span>
+          </a>
+        </div>
+        <div className="contact-block">
+          <p>Експедиторські послуги:</p>
+          <a href={`tel:${phoneNumber}`} className="contact-link">
+            <PhoneIcon className="icon" />
+            <span>380503948155</span>
+          </a>
+        </div>
+        <div className="contact-block">
+          <p>Бухгалтерія:</p>
+          <a href={`tel:${phoneNumber}`} className="contact-link">
+            <PhoneIcon className="icon" />
+            <span>380503948155</span>
+          </a>
+        </div>
+        <div className="contact-block">
+          <p>Наша пошта:</p>
           <a href={`mailto:${emailAddress}`} className="contact-link">
             <EmailIcon className="icon" />
             <span>atkachenko@gmail.com</span>
@@ -71,7 +106,8 @@ function Footer() {
         </div>
       </Grid>
 
-      <Grid item xs={12}>
+      <Grid item xs={12} md={3} sx={{ textAlign: "center" }}>
+        <p style={{ fontSize: "2rem" }}>Напищіть нам</p>
         <form onSubmit={sendEmail} className="contact-form">
           <div className="form-group">
             <input
@@ -108,9 +144,9 @@ function Footer() {
       <Grid item xs={12}>
         <iframe
           title="Google Maps"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47620.19988611016!2d28.501171930117295!3d45.336189021350606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b73f822bb361dd%3A0x9878ecbe91cb7182!2z0JfQtdGA0L3QvtCy0LAg0LvQsNCx0L7RgNCw0YLQvtGA0ZbRjyDQotCe0JIg0KLRgNCw0L3RgSDQkNC5INCi0ZY!5e1!3m2!1sru!2sua!4v1698782149118!5m2!1sru!2sua"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47620.19988611016!2d28.501171930117295!3d45.336189021350606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b73f822bb361dd%3A0x9878ecbe91cb7182!2z0JfQtdGA0L3QvtCy0LAg0LvQsNCx0L7RgNCw0YLQvtGA0ZbRjyDQotCe0JIg0KLRgNCw0L3RгSDQkNC5INCi0ZY!5e1!3m2!1sru!2sua!4v1698782149118!5m2!1sru!2sua"
           width="100%"
-          height="200px"
+          height="300px"
           frameBorder="0"
           allowFullScreen
         ></iframe>
