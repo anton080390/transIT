@@ -2,7 +2,8 @@
   background-color: #000000;
   padding: 1rem;
   text-align: center;
-  color: white; /* Добавьте белый цвет для текста */
+  color: white;
+  height: 100vh;
 }
 
 .contacts {

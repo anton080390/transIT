@@ -5,6 +5,7 @@ import Transport from "../src/components/Pages/Transport";
 import Lab from "../src/components/Pages/Lab1";
 import Cargo from "../src/components/Pages/Cargo";
 import Forwarder from "../src/components/Pages/Fowarder";
+import Footer from "./components/Pages/Footer";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         name: "/forwarder",
         element: <Forwarder />,
+      },
+      {
+        name: "/footer",
+        element: <Footer />,
       },
     ],
   },

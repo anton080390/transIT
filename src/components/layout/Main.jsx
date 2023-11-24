@@ -14,31 +14,33 @@ function Main() {
   const labRef = useRef(null);
   const cargoRef = useRef(null);
   const forwarderRef = useRef(null);
+  const footerRef = useRef(null);
 
   const scrollToSection = (sectionName) => {
+    let targetRef = null;
+
     switch (sectionName) {
       case "Про нас":
-        if (homeRef.current) {
-          homeRef.current.scrollIntoView({ behavior: "smooth" });
-        }
+        targetRef = homeRef;
         break;
       case "Логістика":
-        if (transportRef.current) {
-          transportRef.current.scrollIntoView({ behavior: "smooth" });
-        }
+        targetRef = transportRef;
         break;
       case "Лабораторні дослідження":
-        if (labRef.current) {
-          labRef.current.scrollIntoView({ behavior: "smooth" });
-        }
+        targetRef = labRef;
         break;
       case "Експортна документація":
-        if (forwarderRef.current) {
-          forwarderRef.current.scrollIntoView({ behavior: "smooth" });
-        }
+        targetRef = forwarderRef;
+        break;
+      case "Нащі контакти":
+        targetRef = footerRef;
         break;
       default:
         break;
+    }
+
+    if (targetRef && targetRef.current) {
+      targetRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -61,7 +63,7 @@ function Main() {
       <Grid item xs={12} ref={forwarderRef}>
         <Forwarder />
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} ref={footerRef}>
         <Footer />
       </Grid>
     </>

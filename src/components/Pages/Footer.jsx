@@ -59,54 +59,54 @@ function Footer() {
           <p>Логистика:</p>
           <a href={`tel:${phoneNumber}`} className="contact-link">
             <PhoneIcon className="icon" />
-            <span>380503948155</span>
+            <span>380503223234</span>
           </a>
         </div>
         <div className="contact-block">
           <p>Лабораторія:</p>
           <a href={`tel:${phoneNumber}`} className="contact-link">
             <PhoneIcon className="icon" />
-            <span>380503948155</span>
+            <span>380505325007</span>
           </a>
         </div>
         <div className="contact-block">
           <p>Складське зберігання:</p>
           <a href={`tel:${phoneNumber}`} className="contact-link">
             <PhoneIcon className="icon" />
-            <span>380503948155</span>
+            <span>380996321815</span>
           </a>
         </div>
         <div className="contact-block">
           <p>Перевалка вантажів:</p>
           <a href={`tel:${phoneNumber}`} className="contact-link">
             <PhoneIcon className="icon" />
-            <span>380503948155</span>
+            <span>380667509553</span>
           </a>
         </div>
         <div className="contact-block">
           <p>Експедиторські послуги:</p>
           <a href={`tel:${phoneNumber}`} className="contact-link">
             <PhoneIcon className="icon" />
-            <span>380503948155</span>
+            <span>380506094595</span>
           </a>
         </div>
         <div className="contact-block">
           <p>Бухгалтерія:</p>
           <a href={`tel:${phoneNumber}`} className="contact-link">
             <PhoneIcon className="icon" />
-            <span>380503948155</span>
+            <span>380507670580</span>
           </a>
         </div>
         <div className="contact-block">
           <p>Наша пошта:</p>
           <a href={`mailto:${emailAddress}`} className="contact-link">
             <EmailIcon className="icon" />
-            <span>atkachenko@gmail.com</span>
+            <span>transit@gmail.com</span>
           </a>
         </div>
       </Grid>
 
-      <Grid item xs={12} md={3} sx={{ textAlign: "center" }}>
+      <Grid item xs={12} md={3} sx={{ textAlign: "center", padding: "0" }}>
         <p style={{ fontSize: "2rem" }}>Напищіть нам</p>
         <form onSubmit={sendEmail} className="contact-form">
           <div className="form-group">
