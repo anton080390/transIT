@@ -43,7 +43,12 @@ function Forwarder() {
           }}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
-          style={{ width: "400px", height: "500px", marginTop: "-3rem" }}
+          style={{
+            width: "400px",
+            height: "500px",
+            marginTop: "-3rem",
+            marginBottom: "1rem",
+          }}
         >
           <SwiperSlide>
             <div className="swiper-image-container">
