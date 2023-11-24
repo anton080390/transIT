@@ -107,7 +107,7 @@ function Footer() {
       </Grid>
 
       <Grid item xs={12} md={3} sx={{ textAlign: "center", padding: "0" }}>
-        <p style={{ fontSize: "2rem" }}>Напищіть нам</p>
+        <p style={{ fontSize: "2rem" }}>Напишіть нам</p>
         <form onSubmit={sendEmail} className="contact-form">
           <div className="form-group">
             <input
