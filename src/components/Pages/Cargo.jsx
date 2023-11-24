@@ -15,7 +15,7 @@ import c6 from "../images/cargo/c6.jpeg";
 
 function Cargo() {
   return (
-    <div className="cargo-container" style={{ margin: "3rem" }}>
+    <div className="cargo-container">
       <Grid
         container
         spacing={1}
