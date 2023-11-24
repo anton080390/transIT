@@ -89,23 +89,24 @@ img:hover {
   opacity: 1;
 }
 .transport-h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 .transport-p {
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 .forwarder {
   display: block;
+  margin: 2rem;
 }
 .forwarder-h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   margin-left: 1rem;
   text-align: center;
 }
 .forwarder-p {
-  font-size: 25px;
+  font-size: 1.5625rem;
   margin-left: 1rem;
-  text-align: center;
+  /* text-align: center; */
 }
 .swiper-image-container {
   display: flex;
@@ -152,6 +153,12 @@ h4 {
   }
   .forwarder-h1 {
     font-size: 40px;
+  }
+  .forwarder {
+    margin: 0;
+  }
+  .forwarder-p {
+    margin-left: 0;
   }
 }
 .lab-text {

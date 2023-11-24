@@ -13,7 +13,7 @@ import f4 from "../images/forwarder/Phito1.png";
 
 function Forwarder() {
   return (
-    <div className="forwarder" style={{ margin: "2rem" }}>
+    <div className="forwarder">
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <div className="forwarder-text" style={{ textAlign: "center" }}>

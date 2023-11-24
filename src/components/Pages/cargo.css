@@ -29,6 +29,11 @@ body {
   .swiper-slide {
     width: 120%;
   }
+  .cargo-p {
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+  }
 }
 .swiper-slide img {
   width: 100%;
