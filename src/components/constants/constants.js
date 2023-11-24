@@ -12,11 +12,15 @@ export const MENU = [
     link: "/lab1",
   },
   {
+    name: "Перевалка зернових",
+    link: "/cargo",
+  },
+  {
     name: "Експортна документація",
     link: "/forwarder",
   },
   {
-    name: "Нащі контакти",
+    name: "Наші контакти",
     link: "/footer",
   },
 ];

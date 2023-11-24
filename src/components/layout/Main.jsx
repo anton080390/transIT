@@ -29,10 +29,13 @@ function Main() {
       case "Лабораторні дослідження":
         targetRef = labRef;
         break;
+      case "Перевалка зернових":
+        targetRef = cargoRef;
+        break;
       case "Експортна документація":
         targetRef = forwarderRef;
         break;
-      case "Нащі контакти":
+      case "Наші контакти":
         targetRef = footerRef;
         break;
       default:
