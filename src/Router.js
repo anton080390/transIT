@@ -1,11 +1,11 @@
-import Main from "./components/layout/Main";
+import Main from "./layout/Main";
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../src/components/Pages/Home";
-import Transport from "../src/components/Pages/Transport";
-import Lab from "../src/components/Pages/Lab1";
-import Cargo from "../src/components/Pages/Cargo";
-import Forwarder from "../src/components/Pages/Fowarder";
-import Footer from "./components/Pages/Footer";
+import Home from "./Pages/Home";
+import Transport from "./Pages/Transport";
+import Lab from "./Pages/Lab1";
+import Cargo from "./Pages/Cargo";
+import Forwarder from "./Pages/Fowarder";
+import Footer from "./Pages/Footer";
 
 const router = createBrowserRouter([
   {
